@@ -1,0 +1,15 @@
+{
+  "name": "media-card",
+  "version": "1.0.0",
+  "description": "Media Card Nunjucks",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "merinbose"
+  },
+  "author": "Merin",
+  "license": "ISC"
+}
