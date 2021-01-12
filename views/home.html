@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Cardss</title>
+
+     <link rel="stylesheet" href="css/style.css" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    {% includeData 'input.json' %}
+   
+</head>
+
+<body>
+
+	{% include "header.html" %}
+
+    <div class="uk-container ">
+        {# <div class="uk-flex">
+            <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+            <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+            <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+        </div> #}
+
+            <img src="image/rpa_image_3.png" />
+            <div class="uk-grid">
+                {% for items in cards %}
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-card uk-card-default uk-card-body uk-padding-remove uk-transition-toggle" tabindex="0">
+                            <div class="uk-background-center-center  uk-background-cover uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-transition-scale-up uk-transition-opaque"
+                                        style="background-image: url(../image/swoogo_1920x1080_1.jpg);" > 
+                                        <img src="././image/swoogo_1920x1080_1.jpg" />
+                                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default"> {{items.data}} </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+
+        {# <div uk-grid>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove uk-transition-toggle" tabindex="0">
+                    <div class="uk-background-center-center  uk-background-cover uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-transition-scale-up uk-transition-opaque"
+                        style="background-image: url(image/swoogo_1920x1080_1.jpg);" > 
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove uk-transition-toggle" tabindex="0">
+                    <div class="uk-background-center-center uk-background-cover uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-transition-scale-up uk-transition-opaque" 
+                        style="background-image: url(image/swoogo-1920x1080_4.jpg);">
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove uk-transition-toggle" tabindex="0">
+                    <div class="uk-background-center-center  uk-background-cover uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-transition-scale-up uk-transition-opaque"
+                        style="background-image: url(image/rpa_image_3.png);">
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div uk-grid>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+                    <div class="uk-background-center-center  uk-background-cover uk-background-muted uk-height-medium uk-width-large uk-flex uk-flex-center uk-flex-middle uk-visible-toggle "
+                        style="background-image: url(image/swoogo_1920x1080_1.jpg);" > 
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div class="uk-hidden-hover"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove uk-transition-toggle" tabindex="0">
+                    <div class="uk-background-center-center uk-background-cover uk-background-muted uk-height-medium uk-width-large uk-flex uk-flex-center uk-flex-middle uk-transition-scale-up uk-transition-opaque" 
+                        style="background-image: url(image/swoogo-1920x1080_4.jpg);">
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+                    <div class="uk-background-center-center  uk-background-cover uk-background-muted uk-height-medium uk-width-large uk-flex uk-flex-center uk-flex-middle"
+                        style="background-image: url(image/rpa_image_3.png);" uk-toggle="target: #toggle-hover2; mode: hover">
+                        <!-- <p class="uk-h4 uk-margin-remove uk-visible@m uk-light">Image shown</p>
+                        <p class="uk-h4 uk-margin-remove uk-hidden@m">Image not shown</p> -->
+                        <div id="toggle-hover2"> Use automation to simplify data protection and governance by controlling identities, applications, and data across the information lifecycle.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div> #}
+
+
+    </div>
+       
+
+    {% include "footer.html" %}
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

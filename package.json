@@ -11,5 +11,11 @@
     "url": "merinbose"
   },
   "author": "Merin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-nunjucks": "^2.2.5",
+    "nunjucks": "^3.2.2",
+    "nunjucks-includeData": "0.0.9"
+  }
 }

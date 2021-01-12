@@ -1,0 +1,9 @@
+body{
+    padding: 30px;
+    background-color: darkkhaki;
+}
+
+header, footer{
+    height: 80px;
+    background-color: darkgray;
+}
